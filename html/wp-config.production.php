@@ -9,13 +9,14 @@
   
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', getenv('DBNAME'));
+define('DB_NAME', echo getenv('DBNAME'));
 /** MySQL database username */
-define('DB_USER', getenv('DBUSER'));
+define('DB_USER', echo getenv('DBUSER'));
 /** MySQL database password */
-define('DB_PASSWORD', getenv('DBPASS'));
+define('DB_PASSWORD', echo getenv('DBPASS'));
 /** MySQL hostname */
-define('DB_HOST', getenv('DBHOST'));
+define('DB_HOST', echo getenv('DBHOST'));
+
 
 /**
  * For developers: WordPress debugging mode.
