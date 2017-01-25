@@ -6,16 +6,22 @@
  * in this file.
  * 
  */
-  
+
+$db_name = echo getenv('DBNAME');
+$db_user = echo getenv('DBUSER');
+$db_pass = echo getenv('DBPASS');
+$db_host = echo getenv('DBHOST');
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', echo getenv('DBNAME'));
+define('DB_NAME', $db_name);
 /** MySQL database username */
-define('DB_USER', echo getenv('DBUSER'));
+define('DB_USER', $db_user);
 /** MySQL database password */
-define('DB_PASSWORD', echo getenv('DBPASS'));
+define('DB_PASSWORD', $db_pass);
 /** MySQL hostname */
-define('DB_HOST', echo getenv('DBHOST'));
+define('DB_HOST', $db_host);
 
 
 /**
