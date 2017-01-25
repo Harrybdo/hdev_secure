@@ -42,3 +42,12 @@ chkconfig php-fpm on
 
 service nginx start
 service php-fpm start
+
+
+
+
+######## ADD THE FOLLOWING TO THE BOTTOM OF PHP-FPM.CONFIG FILE
+env[DBNAME] = DBNAME
+env[DBUSER] = DBUSERNAME
+env[DBPASS] = DBPASSWORD
+env[DBHOST] = DBHOSTNAME

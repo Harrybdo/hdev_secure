@@ -2,15 +2,15 @@
 /**
  * Development environment config settings
  *
- * Enter any WordPress config settings that are specific to this environment 
+ * Enter any WordPress config settings that are specific to this environment
  * in this file.
- * 
+ *
  */
 
-$db_name = echo getenv('DBNAME');
-$db_user = echo getenv('DBUSER');
-$db_pass = echo getenv('DBPASS');
-$db_host = echo getenv('DBHOST');
+$db_name = getenv('DBNAME');
+$db_user = getenv('DBUSER');
+$db_pass = getenv('DBPASS');
+$db_host = getenv('DBHOST');
 
 
 // ** MySQL settings - You can get this info from your web host ** //
