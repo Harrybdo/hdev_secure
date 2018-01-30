@@ -13,10 +13,7 @@
 
 // Set environment based on hostname
 switch ($hostname) {
-  case 'www.hdev.gq':
-  case 'www.hdev.site':
-  case 'hdev.site':
-  case 'hdev.gq':
+  case 'www.hdev.online':
     define('WP_ENV', 'production');
 		$_SERVER['HTTPS'] = "off";
     break;
