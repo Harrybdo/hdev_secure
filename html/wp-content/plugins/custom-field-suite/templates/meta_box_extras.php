@@ -12,7 +12,7 @@ foreach ( $types as $post_type ) {
     }
 }
 
-$extras = get_post_meta( $post->ID, 'cfs_extras', true );
+$extras = (array) get_post_meta( $post->ID, 'cfs_extras', true );
 
 if ( ! isset( $extras['hide_editor'] ) ) {
     $extras['hide_editor'] = '';
@@ -31,7 +31,7 @@ if ( ! isset( $extras['context'] ) ) {
         <td class="label">
             <label>
                 <?php _e( 'Order', 'cfs' ); ?>
-                <div class="cfs_tooltip">
+                <div class="cfs_tooltip">?
                     <div class="tooltip_inner"><?php _e( 'The field group with the lowest order will appear first.', 'cfs' ); ?></div>
                 </div>
             </label>
